@@ -1,51 +1,75 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+
+</script>
 
 <template>
-  <header
-    class="container flex items-center justify-between h-16 px-4 mx-auto rounded dark:bg-gray-900"
-  >
-    <a rel="noopener noreferrer" href="#" aria-label="Homepage">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="currentColor"
-        viewBox="0 0 32 32"
-        class="w-6 h-6 dark:text-violet-400"
-      >
-        <path
-          d="M27.912 7.289l-10.324-5.961c-0.455-0.268-1.002-0.425-1.588-0.425s-1.133 0.158-1.604 0.433l0.015-0.008-10.324 5.961c-0.955 0.561-1.586 1.582-1.588 2.75v11.922c0.002 1.168 0.635 2.189 1.574 2.742l0.016 0.008 10.322 5.961c0.455 0.267 1.004 0.425 1.59 0.425 0.584 0 1.131-0.158 1.602-0.433l-0.014 0.008 10.322-5.961c0.955-0.561 1.586-1.582 1.588-2.75v-11.922c-0.002-1.168-0.633-2.189-1.573-2.742zM27.383 21.961c0 0.389-0.211 0.73-0.526 0.914l-0.004 0.002-10.324 5.961c-0.152 0.088-0.334 0.142-0.53 0.142s-0.377-0.053-0.535-0.145l0.005 0.002-10.324-5.961c-0.319-0.186-0.529-0.527-0.529-0.916v-11.922c0-0.389 0.211-0.73 0.526-0.914l0.004-0.002 10.324-5.961c0.152-0.090 0.334-0.143 0.53-0.143s0.377 0.053 0.535 0.144l-0.006-0.002 10.324 5.961c0.319 0.185 0.529 0.527 0.529 0.916z"
-        ></path>
-        <path
-          d="M22.094 19.451h-0.758c-0.188 0-0.363 0.049-0.515 0.135l0.006-0.004-4.574 2.512-5.282-3.049v-6.082l5.282-3.051 4.576 2.504c0.146 0.082 0.323 0.131 0.508 0.131h0.758c0.293 0 0.529-0.239 0.529-0.531v-0.716c0-0.2-0.11-0.373-0.271-0.463l-0.004-0.002-5.078-2.777c-0.293-0.164-0.645-0.26-1.015-0.26-0.39 0-0.756 0.106-1.070 0.289l0.010-0.006-5.281 3.049c-0.636 0.375-1.056 1.055-1.059 1.834v6.082c0 0.779 0.422 1.461 1.049 1.828l0.009 0.006 5.281 3.049c0.305 0.178 0.67 0.284 1.061 0.284 0.373 0 0.723-0.098 1.027-0.265l-0.012 0.006 5.080-2.787c0.166-0.091 0.276-0.265 0.276-0.465v-0.716c0-0.293-0.238-0.529-0.529-0.529z"
-        ></path>
-      </svg>
-    </a>
-    <div class="items-center hidden space-x-8 lg:flex">
-      <div class="space-x-4">
-        <a rel="noopener noreferrer" href="#">Link</a>
-        <a rel="noopener noreferrer" href="#">Link</a>
-        <a rel="noopener noreferrer" href="#">Link</a>
-      </div>
-      <button
-        class="px-4 py-2 rounded-md dark:bg-violet-400 dark:text-gray-900"
-      >
-        Sign up
-      </button>
-    </div>
-    <button class="flex items-center justify-center p-2 lg:hidden">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-        class="w-6 h-6 dark:text-gray-50"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          d="M4 6h16M4 12h16M4 18h16"
-        ></path>
+  <header class="p-4 border border-slate dark:text-gray-800 ">
+    <div class="container  flex justify-between h-16 mx-auto">
+      <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
+       <nuxt-img src="../assets/"/>
+        <span class="ml-2">Explore a different way to travel</span>
+      </a>
+      <ul class="items-stretch hidden space-x-3 md:flex">
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center  px-4 -mb-1 border-b-2 dark:border-transparent">Search
+            <svg class="ml-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M9.53553 9.53553C7.58291 11.4882 4.41709 11.4882 2.46447 9.53553C0.511845 7.58291 0.511845 4.41709 2.46447 2.46447C4.41709 0.511845 7.58291 0.511845 9.53553 2.46447C11.4882 4.41709 11.4882 7.58291 9.53553 9.53553ZM1.75736 10.2426C-0.585786 7.8995 -0.585786 4.1005 1.75736 1.75736C4.1005 -0.585786 7.8995 -0.585786 10.2426 1.75736C12.4667 3.98144 12.5797 7.51718 10.5817 9.87457L15.8536 15.1464C16.0488 15.3417 16.0488 15.6583 15.8536 15.8536C15.6583 16.0488 15.3417 16.0488 15.1464 15.8536L9.87457 10.5817C7.51718 12.5797 3.98144 12.4667 1.75736 10.2426Z"
+                fill="#191919" />
+            </svg>
+          </a>
+        </li>
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 text-stone-500 hover:dark:text-amber-500 hover:dark:border-amber-500 dark:border-transparent"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </li>
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-stone-500 hover:dark:text-amber-500 hover:dark:border-amber-500"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </li>
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 text-stone-500 hover:dark:text-amber-500 hover:dark:border-amber-500 dark:border-transparent"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </li>
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent text-stone-500 hover:dark:text-amber-500 hover:dark:border-amber-500"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </li>
+        <li class="flex">
+          <a rel="noopener noreferrer" href="#"
+            class="flex items-center px-4 -mb-1 border-b-2 text-stone-500 hover:dark:text-amber-500 hover:dark:border-amber-500 dark:border-transparent"><svg
+              xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook"
+              viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        </li>
+      </ul>
+    <button class="flex justify-end p-4 md:hidden">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
       </svg>
     </button>
-  </header>
-</template>
+  </div>
+</header></template>

@@ -1,70 +1,95 @@
-<script setup lang="ts"></script>
+<script>
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from 'swiper/vue';
+
+// Import Swiper styles
+import 'swiper/css';
+
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import '../assets/css/style.css';
+
+// import required modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+
+export default {
+  components: {
+    Swiper,
+    SwiperSlide,
+  },
+  setup() {
+    return {
+      modules: [Navigation, Pagination, Mousewheel, Keyboard],
+    };
+  },
+};
+</script>
+
 
 <template>
   <main>
-    <div class="container mx-auto space-y-16">
-      <section class="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5">
-        <div
-          class="w-full p-6 rounded-md sm:p-16 xl:col-span-2 dark:bg-gray-900"
-        >
-          <span class="block mb-2 dark:text-violet-400"
-            >Mamba design system</span
-          >
-          <h1 class="text-5xl font-extrabold dark:text-gray-50">
-            Build it with Mamba
+    <div class=" mx-auto space-y-16">
+      <Banner />
+
+      <swiper :cssMode="true" :navigation="true" :pagination="true" :mousewheel="true" :keyboard="true" :modules="modules"
+        class="mySwiper">
+        <swiper-slide>
+          <div class="">
+            <span> <span class="textOne">Solo travel</span> <span class="textTwo mx-1">by</span> <span
+                class="textThree">Clarence Bechtol</span></span>
+            <h5>7 things to do in Bali — a local’s guide and insider tips</h5>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="">
+            <span> <span class="textOne">Solo travel</span> <span class="textTwo mx-1">by</span> <span
+                class="textThree">Clarence Bechtol</span></span>
+            <h5>7 things to do in Bali — a local’s guide and insider tips</h5>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="">
+            <span> <span class="textOne">Solo travel</span> <span class="textTwo mx-1">by</span> <span
+                class="textThree">Clarence Bechtol</span></span>
+            <h5>7 things to do in Bali — a local’s guide and insider tips</h5>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="">
+            <span> <span class="textOne">Solo travel</span> <span class="textTwo mx-1">by</span> <span
+                class="textThree">Clarence Bechtol</span></span>
+            <h5>7 things to do in Bali — a local’s guide and insider tips</h5>
+          </div>
+        </swiper-slide>
+      </swiper>
+      <!-- <section class="grid gap-6 text-center lg:grid-cols-2 xl:grid-cols-5">
+        <div class="w-full p-6 rounded-md sm:p-16 xl:col-span-2">
+          <h1 class="text-5xl font-extrabold text-black">Welcome to the <strong>future</strong> educations systems
           </h1>
-          <p class="my-8">
-            <span class="font-medium dark:text-gray-50"
-              >Modular and versatile.</span
-            >The ultimate design toolkit for savvy technology startups.
-          </p>
-          <form action="" class="self-stretch space-y-3">
-            <div>
-              <label for="name" class="text-sm sr-only">Your name</label>
-              <input
-                id="name"
-                type="text"
-                placeholder="Your name"
-                class="w-full rounded-md focus:ring focus:ri dark:border-gray-700"
-              />
-            </div>
-            <div>
-              <label for="lastname" class="text-sm sr-only"
-                >Email address</label
-              >
-              <input
-                id="lastname"
-                type="text"
-                placeholder="Email address"
-                class="w-full rounded-md focus:ring focus:ri dark:border-gray-700"
-              />
-            </div>
-            <button
-              class="w-full py-2 font-semibold rounded dark:bg-violet-400 dark:text-gray-900"
-            >
-              Join the waitlist
-            </button>
-          </form>
+          <div class="my-8">
+            <p class="font-medium dark:text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+            <p class="font-medium dark:text-gray-500">eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+
+          <NuxtLink class=" py-2 font-semibold rounded border border-blue-700">
+            Learn More
+          </NuxtLink>
         </div>
-        <img
-          src="https://source.unsplash.com/random/480x360"
-          alt=""
-          class="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500"
-        />
+        <img src="https://source.unsplash.com/random/480x360" alt=""
+          class="object-cover w-full h-full rounded-md xl:col-span-3 dark:bg-gray-500" />
       </section>
+     
       <section>
-        <span
-          class="block mb-2 text-xs font-medium tracki uppercase lg:text-center dark:text-violet-400"
-          >How it works</span
-        >
+        <span class="block mb-2 text-xs font-medium tracki uppercase lg:text-center dark:text-violet-400">How it
+          works</span>
         <h2 class="text-5xl font-bold lg:text-center dark:text-gray-50">
           Building with Mamba is simple
         </h2>
         <div class="grid gap-6 my-16 lg:grid-cols-3">
           <div class="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
             <div
-              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900"
-            >
+              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">
               1
             </div>
             <p class="text-2xl font-semibold">
@@ -73,8 +98,7 @@
           </div>
           <div class="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
             <div
-              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900"
-            >
+              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">
               2
             </div>
             <p class="text-2xl font-semibold">
@@ -84,8 +108,7 @@
           </div>
           <div class="flex flex-col p-8 space-y-4 rounded-md dark:bg-gray-900">
             <div
-              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900"
-            >
+              class="flex items-center justify-center flex-shrink-0 w-12 h-12 text-xl font-bold rounded-full dark:bg-violet-400 dark:text-gray-900">
               3
             </div>
             <p class="text-2xl font-semibold">
@@ -96,19 +119,11 @@
         </div>
       </section>
       <section class="grid gap-6 lg:grid-cols-2">
-        <img
-          src="https://source.unsplash.com/random/360x480"
-          alt=""
-          class="object-cover w-full rounded-md max-h-96 dark:bg-gray-500"
-        />
-        <div
-          class="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900"
-        >
-          <img
-            src="https://source.unsplash.com/random/100x100"
-            alt=""
-            class="object-cover w-20 h-20 rounded-full dark:bg-gray-500"
-          />
+        <img src="https://source.unsplash.com/random/360x480" alt=""
+          class="object-cover w-full rounded-md max-h-96 dark:bg-gray-500" />
+        <div class="flex flex-col items-center w-full p-6 space-y-8 rounded-md lg:h-full lg:p-8 dark:bg-gray-900">
+          <img src="https://source.unsplash.com/random/100x100" alt=""
+            class="object-cover w-20 h-20 rounded-full dark:bg-gray-500" />
           <blockquote class="max-w-lg text-lg italic font-medium text-center">
             "Et, dignissimos obcaecati. Recusandae praesentium doloribus vitae?
             Rem unde atque mollitia!"
@@ -118,31 +133,13 @@
             <p>CEO of Company Co.</p>
           </div>
           <div class="flex space-x-2">
-            <button
-              type="button"
-              aria-label="Page 1"
-              class="w-2 h-2 rounded-full dark:bg-gray-50"
-            ></button>
-            <button
-              type="button"
-              aria-label="Page 2"
-              class="w-2 h-2 rounded-full dark:bg-gray-600"
-            ></button>
-            <button
-              type="button"
-              aria-label="Page 3"
-              class="w-2 h-2 rounded-full dark:bg-gray-600"
-            ></button>
-            <button
-              type="button"
-              aria-label="Page 4"
-              class="w-2 h-2 rounded-full dark:bg-gray-600"
-            ></button>
+            <button type="button" aria-label="Page 1" class="w-2 h-2 rounded-full dark:bg-gray-50"></button>
+            <button type="button" aria-label="Page 2" class="w-2 h-2 rounded-full dark:bg-gray-600"></button>
+            <button type="button" aria-label="Page 3" class="w-2 h-2 rounded-full dark:bg-gray-600"></button>
+            <button type="button" aria-label="Page 4" class="w-2 h-2 rounded-full dark:bg-gray-600"></button>
           </div>
         </div>
-        <div
-          class="p-8 space-y-8 rounded-md lg:col-span-full lg:py-12 dark:bg-gray-900"
-        >
+        <div class="p-8 space-y-8 rounded-md lg:col-span-full lg:py-12 dark:bg-gray-900">
           <h2 class="text-5xl font-bold dark:text-gray-50">Create with us</h2>
           <p class="dark:text-gray-400">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt
@@ -157,18 +154,11 @@
       <section>
         <div class="grid gap-6 lg:grid-cols-3">
           <div class="overflow-hidden rounded lg:flex lg:col-span-3">
-            <img
-              src="https://source.unsplash.com/random/485x365"
-              alt=""
-              class="object-cover w-full h-auto max-h-96 dark:bg-gray-500"
-            />
-            <div
-              class="p-6 space-y-6 lg:p-8 md:flex md:flex-col dark:bg-gray-900"
-            >
+            <img src="https://source.unsplash.com/random/485x365" alt=""
+              class="object-cover w-full h-auto max-h-96 dark:bg-gray-500" />
+            <div class="p-6 space-y-6 lg:p-8 md:flex md:flex-col dark:bg-gray-900">
               <span
-                class="self-start px-3 py-1 text-sm rounded-full dark:bg-violet-400 dark:text-gray-900"
-                >Business</span
-              >
+                class="self-start px-3 py-1 text-sm rounded-full dark:bg-violet-400 dark:text-gray-900">Business</span>
               <h2 class="text-3xl font-bold md:flex-1">
                 Curating a workplace that inspires team movement
               </h2>
@@ -203,22 +193,18 @@
         </div>
       </section>
       <section>
-        <div
-          class="container p-6 py-20 mx-auto rounded lg:px-8 dark:bg-gray-900"
-        >
+        <div class="container p-6 py-20 mx-auto rounded lg:px-8 dark:bg-gray-900">
           <h2 class="text-5xl font-bold text-center">
             Our team is here to help you.
           </h2>
           <div class="flex justify-center p-4">
             <a rel="noopener noreferrer" href="#">Meet our crew &gt;</a>
           </div>
-          <img
-            src="https://source.unsplash.com/random/360x240"
-            alt=""
-            class="object-cover w-full h-auto mt-8 rounded max-h-96 dark:bg-gray-500"
-          />
+          <img src="https://source.unsplash.com/random/360x240" alt=""
+            class="object-cover w-full h-auto mt-8 rounded max-h-96 dark:bg-gray-500" />
         </div>
-      </section>
+      </section> -->
     </div>
   </main>
 </template>
+
