@@ -2,7 +2,7 @@
 
 <template>
   <div class="min-h-screen">
-    <div class="pb-6 space-y-8">
+    <div class="pb-6 ">
       <Header />
       <div>
         <slot />

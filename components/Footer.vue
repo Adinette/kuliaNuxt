@@ -1,9 +1,9 @@
 <script setup lang="ts"></script>
 <template>
-	<footer class="px-4 divide-y bg-black text-white">
-		<div class="container flex flex-col justify-between py-10 mx-auto space-y-8 lg:flex-row lg:space-y-0">
+	<footer class="p-4 divide-y space-y-8  bg-black text-white">
+		<div class="container flex flex-col justify-between py-10 mx-auto lg:flex-row lg:space-y-0">
 			<div class="lg:w-1/3">
-        <div class="py-6 text-sm text-center dark:text-gray-400">
+        <div class="py-6 text-sm block justify-center dark:text-gray-400">
           <div class="mb-5"><a class="navbar-brand mb-3" href="#">
                 <img src="" alt="logo">
               </a></div>

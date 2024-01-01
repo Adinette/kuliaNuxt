@@ -100,7 +100,8 @@ h6,
 /* banner */
 .swiper {
     width: 100%;
-    height: 100%;
+    height: 650px;
+    margin: 0px;
   }
   
   .swiper-slide {
@@ -116,11 +117,26 @@ h6,
   
   .swiper-slide img {
     display: block;
-    width: 100%;
+    width: 69%;
     height: 100%;
+    margin:0rem auto 1rem;
     object-fit: cover;
   }
-  
+  .swiper-slide .text-block {
+    margin-right: 41rem;
+  }
+  .swiper-slide h5 {
+    margin-top: 25px;
+    margin-right: 22rem;
+
+  }
+ 
+.swiper-pagination-bullet-active {
+    background-color: #F79D1D;
+}
+.banner-list{
+    margin-left: 45px;
+}
 .banner .nav-link .banner-text:hover {
     color: #F79D1D;
 }
@@ -170,10 +186,14 @@ h6,
 }
 
 /* category */
-.category {
-    border-top: 1px solid #6E6962;
-}
 
+.category .container {
+    margin-top: 60px;
+    margin-bottom: 180px;
+}
+.category-list{
+    margin-left: 36px;
+}
 /* feature */
 .feature{
     background-color: #F0E2D0;
@@ -185,12 +205,12 @@ h6,
 }
 
 /* popular */
-.popular .popular-block{
-    border: 1px solid #F0E2D0;
-}
-.popular .popular-list a{
+
+.popular-list a{
     color: #F79D1D;
     border-bottom: 2px solid #F79D1D; 
+    margin-left: 0.5rem;
+    text-align: center;
 }
  .pagination a{
     border: none;
@@ -208,10 +228,13 @@ h6,
 /* newletter */
 .newletter{
     background-color: #C4C4C4;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 } 
 .newletter input{
-    float: left;
-    width: 65%;
+    height: 38px;
+    width: 64%;
+    padding-left: 1rem;
 } 
 .newletter a{
     border-radius: 5px;
@@ -252,6 +275,11 @@ h6,
 }
 .instagam-rightSidebar{
     border-top: 1px solid #f0e2d0;
+}
+
+/*  */
+.popular-block{
+    height: 525px;
 }
 .popular-content h5{
     font-weight: 400;
@@ -514,7 +542,7 @@ h6,
     background-color: #F79D1D;
     border-radius: 5px;
     padding: 8px 32px;
-    color: black;
+    margin-left: 1rem;
 }
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {

@@ -6,17 +6,11 @@
   <header class="p-4 border border-slate dark:text-gray-800 ">
     <div class="container  flex justify-between h-16 mx-auto">
       <a rel="noopener noreferrer" href="#" aria-label="Back to homepage" class="flex items-center p-2">
-        <!-- Quand tu utilise la balise img normale, cette nomenclature suffit -->
        <img src="~/assets/images/home/logo.png"/>
-       <!-- Quand tu utilise NuxtImg ca devient complexe, j'ai du changer la ou pointe la racine vers assets/images
-      desormais tu mets directements / et tu suis le chemin normal vers ton images
-      dans l'example en bas on aurait eu normalement src="~/assets/images/home/logo.png" mais maintenant comme on pointe deja vers 
-      assets/images on fait seulement src="/home/logo.png"
-      -->
-       <NuxtImg src="/home/logo.png"/>
-        <span class="ml-2">Explore a different way to travel</span>
+       <!-- <NuxtImg src="/home/logo.png"/> -->
+        <span class="ml-3">Explore a different way to travel</span>
       </a>
-      <ul class="items-stretch hidden space-x-3 md:flex">
+      <ul class="items-stretch hidden md:flex">
         <li class="flex">
           <a rel="noopener noreferrer" href="#"
             class="flex items-center  px-4 -mb-1 border-b-2 dark:border-transparent">Search
