@@ -176,7 +176,7 @@ export default {
         </div>
       </div>
      
-      <section class="py-6 feature">
+      <section class="py-6 my-6 feature">
         <div class="container max-w-screen-xl p-4 mx-auto sm:p-10">
           <div class="mb-12 space-y-4 text-center">
             <h1 class="text-4xl font-semibold leadi">Featured Explore</h1>

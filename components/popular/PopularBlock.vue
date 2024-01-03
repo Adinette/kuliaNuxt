@@ -45,20 +45,20 @@
                 </div>
                 <div class="flex flex-col p-6 mt-8 border border-slate-500">
                     <h6 class="text-center text-xl font-semibold text-black">Tags</h6>
-                    <div class="space-x-3">
-                        <div class="flex">
-                            <div class="popular-list col-3"><a href="#">On the road</a></div>
+                    <div class="">
+                        <div class="flex justify-between">
+                            <div class="popular-list col-3"><a href="#">Road</a></div>
                             <div class="popular-list  col-3"><a href="#">Festivals</a></div>
                             <div class="popular-list  col-3"><a href="#">Gear</a></div>
                             <div class="popular-list  col-3"><a href="#">Exotic</a></div>
                         </div>
-                        <div class="flex">
+                        <div class="flex justify-between">
                             <div class="popular-list col-3"><a href="#">Cruises</a></div>
                             <div class="popular-list col-3"><a href="#">Hotels</a></div>
-                            <div class="popular-list col-3"><a href="#">Travel tips</a></div>
+                            <div class="popular-list col-3"><a href="#">Travel </a></div>
                             <div class="popular-list col-3"><a href="#">Airlines</a></div>
                         </div>
-                        <div class="flex">
+                        <div class="flex space-x-4">
                             <div class="popular-list col-3"><a href="#">Trendy</a></div>
                             <div class="popular-list col-3"><a href="#">Photography</a></div>
                         </div>
@@ -66,7 +66,7 @@
                 </div>
                 <div class="flex flex-col p-6 mt-8 border border-slate-500">
                     <h6 class="text-center text-xl font-semibold text-black">About Author</h6>
-                    <p>Eget donec nunc feugiat aliquet odio dignissim volutpat. Lacus quam cursus sed nullam tristique in viverra id.</p>
+                    <p class="text-center">Eget donec nunc feugiat aliquet odio dignissim volutpat. Lacus quam cursus sed nullam tristique in viverra id.</p>
                 </div>
          
 </template>

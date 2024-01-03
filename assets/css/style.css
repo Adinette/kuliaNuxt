@@ -212,18 +212,9 @@ h6,
     margin-left: 0.5rem;
     text-align: center;
 }
- .pagination a{
-    border: none;
-    color: black;
-}
-.pagination a:hover{
-    border-radius: 50%;
-    color: #F79D1D;
-    font-weight: 500;
-    border:1px solid #F0E2D0;
-    background-color: white;
-    box-shadow: none;
-}
+ .pagination {
+    margin-left: 6rem;
+ }
 
 /* newletter */
 .newletter{
@@ -462,11 +453,7 @@ h6,
     font-size: 48px;
     color: #F79D1D;
 }
-.blogPost-content p{
-    font-size: 18px;
-    font-weight: 400;
-    color: black;
-}
+
 .blogPost-text{
     border-left: 2px solid #F79D1D;
 }
